@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trilha Full-Stack · Geovane Paixão</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <div class="brand-mark">H+</div>
+      <div class="brand-text">Trilha Full-Stack<small>CHECK-IN · GEOVANE PAIXÃO</small></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" type="button">◐</button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <h1>Da sua stack de hoje até full-stack completo.</h1>
+    <p>Uma trilha com 7 fases e conteúdos de front-end, back-end, dados e infraestrutura. Marque o que já domina, faça check-in do que estuda esta semana e acompanhe seu XP subir a cada etapa.</p>
+  </section>
+
+  <div class="status-card">
+    <div class="status-row">
+      <span class="level-tag" id="levelTag">NÍVEL · APRENDIZ</span>
+      <span class="streak" id="streakTag">🔥 0 dias seguidos</span>
+    </div>
+    <div class="xp-line">
+      <div class="xp-top"><span id="xpLabel">0 / 0 XP</span><span id="pctLabel">0%</span></div>
+      <div class="xp-track"><div class="xp-fill" id="xpFill" style="width:0%"></div></div>
+    </div>
+    <div class="phase-pills" id="phasePills"></div>
+  </div>
+
+  <main class="trail-section" id="trail"></main>
+
+  <footer>
+    <p>Progresso salvo neste navegador. Um check-in conta uma vez por dia — ele confirma que você estudou o tópico hoje e mantém sua sequência viva.</p>
+    <button class="reset-btn" id="resetBtn" type="button">Reiniciar progresso</button>
+  </footer>
+</div>
+
+<div class="toast" id="toast">✓ Progresso salvo</div>
+
+<script src="script.js"></script>
+</body>
+</html>
